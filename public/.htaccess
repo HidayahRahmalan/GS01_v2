@@ -4,7 +4,9 @@
     </IfModule>
 
     RewriteEngine On
-    RewriteBase /2026/all/GroupMDB/GS01/gs01/public/
+    
+    # 🟢 DIKEMASKINI: Menggunakan HURUF BESAR 'GS01' sepadan nama folder server anda
+    RewriteBase /2026/all/GroupMDB/GS01/public/
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
