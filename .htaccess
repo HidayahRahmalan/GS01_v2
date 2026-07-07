@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # 1. Define the base path correctly
+    RewriteBase /2026/all/GroupMDB/GS01/gs01/
+
+    # 2. Prevent redirect loops: If the request already points to public/, skip the rule
+    RewriteCond %{REQUEST_URI} !^/2026/all/GroupMDB/GS01/gs01/public/
+
+    # 3. Map everything to the public directory
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
