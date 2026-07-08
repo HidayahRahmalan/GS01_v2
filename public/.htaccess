@@ -5,8 +5,8 @@
 
     RewriteEngine On
     
-    # 🟢 DIKEMASKINI: Menggunakan HURUF BESAR 'GS01' sepadan nama folder server anda
-    RewriteBase /2026/all/GroupMDB/GS01/public/
+    # 🚨 KEMASKINI DI SINI: Letak dua kali GS01 huruf besar sepadan struktur server bertingkat
+    RewriteBase /2026/all/GroupMDB/GS01/GS01/public/
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .

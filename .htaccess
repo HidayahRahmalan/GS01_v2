@@ -1,12 +1,12 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
     
-    # 1. Pastikan GS01 menggunakan HURUF BESAR sepadan dengan nama folder di server
-    RewriteBase /2026/all/GroupMDB/GS01/
+    # 📌 1. Halakan base path tepat ke folder projek Laravel bertingkat awak
+    RewriteBase /2026/all/GroupMDB/GS01/GS01/
 
-    # 2. Elakkan looping: Jika request sudah ke public/, skip rule ini
-    RewriteCond %{REQUEST_URI} !^/2026/all/GroupMDB/GS01/public/
+    # 📌 2. Elakkan looping: Semak jika URL belum ada perkataan /public/
+    RewriteCond %{REQUEST_URI} !/public/
 
-    # 3. Hala semuanya ke folder public Laravel
+    # 📌 3. Tolak trafik masuk ke dalam folder public Laravel secara senyap
     RewriteRule ^(.*)$ public/$1 [L]
 </IfModule>
