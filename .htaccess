@@ -2,7 +2,7 @@
     RewriteEngine On
     
     # 📌 1. Halakan base path tepat ke folder projek Laravel bertingkat awak
-    RewriteBase /2026/all/GroupMDB/GS01/GS01/
+    RewriteBase /2026/all/GroupMDB/GS01/GS01_v2/
 
     # 📌 2. Elakkan looping: Semak jika URL belum ada perkataan /public/
     RewriteCond %{REQUEST_URI} !/public/
