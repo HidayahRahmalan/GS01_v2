@@ -6,7 +6,7 @@
     RewriteEngine On
     
     # 🚨 KEMASKINI DI SINI: Letak dua kali GS01 huruf besar sepadan struktur server bertingkat
-    RewriteBase /2026/all/GroupMDB/GS01/GS01/public/
+    RewriteBase /2026/all/GroupMDB/GS01/GS01_v2/public/
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
